@@ -128,5 +128,8 @@ function resizePfps() {
     container.style.setProperty("--size", `${leftOver / cols}px`);
 }
 
-window.addEventListener("resize", resizePfps);
+window.addEventListener("resize", () => {
+    resizePfps();
+    setTimeout(resizePfps,200);
+});
 resizePfps();
