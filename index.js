@@ -130,6 +130,6 @@ function resizePfps() {
 
 window.addEventListener("resize", () => {
     resizePfps();
-    setTimeout(resizePfps,200);
+    setTimeout(resizePfps,500);
 });
 resizePfps();
