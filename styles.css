@@ -74,7 +74,7 @@ a {
 
 a:hover {
     color: #b5ccfd;
-    text-shadow: 0px 0px 1em #ffffff
+    text-shadow: 0px 0px 1em #ffffff;
 }
 
 #top {
@@ -455,7 +455,7 @@ h2 {
 .nav-arrow:hover {
     cursor: pointer;
     background: #082d4e;
-    box-shadow: 2px 2px 2px #00000071;
+    box-shadow: 0px 0px 1em #fff8, 0px 0px 1em #fff2 inset;
 }
 
 .member-name {

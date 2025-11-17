@@ -67,7 +67,7 @@ addEventListener("DOMContentLoaded", () => {
 })
 
 const members = ["emma", "maiya", "william", "jonathan", "alex", "mateo", "jay", "yoav", "oscar", "daniel", "om"];
-const names = ["Emma Li", "Maiya Qiu", "William Liu", "Jonathan Ji", "Alex Sheng", "Mateo Brody", "Jay Wang", "Yoav ?", "Oscar Huang", "Daniel Haiduc", "Om Mehta"];
+const names = ["Emma Li", "Maiya Qiu", "William Liu", "Jonathan Ji", "Alex Sheng", "Mateo Brody", "Jay Wang", "Yoav Hazan", "Oscar Huang", "Daniel Haiduc", "Om Mehta"];
 let currentMember = 0;
 
 function showMember() {
