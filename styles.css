@@ -498,7 +498,7 @@ h2 {
 .special-ownline {
     width: 100%;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .sponsor-section {
@@ -508,7 +508,7 @@ h2 {
     justify-content:space-evenly;
     /* width: 100%; */
     flex-wrap: wrap;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 
 .sponsor-section a{
