@@ -552,12 +552,3 @@ h2 {
     background: #ddd;
     border-radius:1rem;
 }
-.platinum-title {
-    background-image: linear-gradient(to top left, #52525b, #d4d4d8);
-}
-.gold-title{
-    background-image: linear-gradient(to top left, #d97706, #fcd34d);
-}
-.silver-title {
-    background-image: linear-gradient(to top left, #27272a, #a1a1aa);
-}         
