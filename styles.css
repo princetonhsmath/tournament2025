@@ -200,11 +200,13 @@ nav.big #menu {
 .noscroll {
     overflow: hidden;
 }
+
 h3 {
     font-size: 2rem;
 }
+
 h2 {
-    font-size:3rem;
+    font-size: 3rem;
 }
 
 h2:hover {
@@ -341,10 +343,6 @@ tr:hover {
 
 tr:hover:nth-child(2n) {
     background-color: rgba(205, 222, 255, 0.1);
-}
-
-h2 {
-    font-size: 2rem;
 }
 
 #menu-content .lesser a {
@@ -495,23 +493,17 @@ h2 {
     justify-content: center;
 }
 
-.special-ownline {
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.sponsor-section {
+.sponsor-section:not(.plat) {
     display: flex;
-    flex-direction:row;
-    gap:2rem;
-    justify-content:space-evenly;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-evenly;
     /* width: 100%; */
     flex-wrap: wrap;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 
-.sponsor-section a{
+.sponsor-section a {
     transition: all 0.1s;
     display: flex;
     justify-content: center;
@@ -519,32 +511,98 @@ h2 {
 }
 
 .sponsor-section a img {
-    height:10rem;
+    height: 9rem;
 }
 
 .sponsor-section a.sponsor-wide img {
-    height:8rem;
+    height: 8rem;
+}
+
+.sponsor-section.plat a img {
+    height: 15rem; 
+    max-width:calc(min(40rem,50vw));
+}
+
+/* .sponsor-section.plat a.sponsor-wide {
+    height:10rem;
+} */
+
+.sponsor-section.plat a {
+    background: radial-gradient(circle,#ffffff20 0%,#ffffff12 100%);
+    padding:2rem;
+    border-radius: 1rem;
+    color:unset;
+    text-decoration: unset;
+    text-shadow: unset;
+
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    flex-wrap: wrap;
+
+    backdrop-filter: blur(2rem);
+    border: 1px solid transparent;
+    &:hover {
+        border: 1px solid #eee8;
+    }
+
+    margin-block:2rem;
+}
+
+.sponsor-section.plat a p {
+    font-size:1.1rem;
+    width:30ch;
+    flex-grow:1;
+}
+
+@media screen and (max-width:700px) {
+    .sponsor-section.plat a {
+        flex-direction: column;
+        padding:1rem;
+        padding-top:2rem;
+    }
+    .sponsor-section.plat a img {
+        max-width: calc(100% - 2rem);
+        /* i hate this ^^  */
+    }
+    .sponsor-section.plat a p {
+        width: unset;
+    }
+
+}
+
+i.small {
+    font-size:1rem;
+}
+
+.sponsor-section.plat a.sponsor-wide img {
+    height:unset;
 }
 
 @media screen and (max-width:450px) {
     .sponsor-section a.sponsor-wide img {
-        height:unset;
-        width:100%;
+        height: unset;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:300px) {
     .sponsor-section a.sponsor-wide img {
-        height:unset;
-        width:100%;
+        height: unset;
+        width: 100%;
     }
 }
 
 .sponsor-section a:hover {
-    scale:105%;
+    scale: 105%;
 }
+
+.sponsor-section.plat a:hover {
+    scale: 102%;
+}
+
 .sponsor-section a:hover img {
-    filter:drop-shadow(0px 0px 1rem #fff8);
+    filter: drop-shadow(0px 0px 1rem #fff8);
 }
 
 @supports (font: -apple-system-body) {
@@ -555,30 +613,32 @@ h2 {
 
 .sponsor-section a.white-bg {
     background: #ddd;
-    border-radius:1rem;
+    border-radius: 1rem;
 }
-#gold-title {
-  color: #A9A9A9;    
-  display: block;  
-  margin-bottom: 20px;
-}
-#plat-title {
-  color: #E7EBEC;    
-  display: block;  
-  margin-bottom: 20px;
-}
-#silv-title {
-  color: #d4af37;    
-  display: block;  
-  margin-bottom: 20px;
-}
-.sponsor-section h3 {
+
+#sponsors h3 {
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     background-clip: text;
     -webkit-background-clip: text;
-      
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-block:0;
+
+    /* margin-top: 2rem; */
+    /* margin-bottom: 1rem; */
+}
+
+#sponsors h3.gold {
+    color: #d4af37;
+    display: block;
+}
+
+#sponsors h3.plat {
+    color: #aaebfb;
+    display: block;
+}
+
+#sponsors h3.silver {
+    color: #cecece;
+    display: block;
 }
