@@ -555,31 +555,27 @@ h2 {
     border-radius:1rem;
 }
 .gold-title {
-  color: #d4af37;    
+  color: #A9A9A9;    
   display: block;  
   margin-bottom: 20px;
 }
 .plat-title {
-  font-weight: 700;
-  background: linear-gradient(
-    90deg,
-    #f2f2f2 0%,
-    #d9d9d9 25%,
-    #e5e4e2 50%,
-    #bfbfbf 75%,
-    #f5f5f5 100%
-  );
-  -webkit-background-clip: text;
-  color: transparent;
-  display: inline-block;
-
-  /* optional glow/shine */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
-  
+  color: #E7EBEC;    
+  display: block;  
   margin-bottom: 20px;
 }
 .silver-title {
   color: #d4af37;    
   display: block;  
   margin-bottom: 20px;
+}
+.sopnsor-section h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+      
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
