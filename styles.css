@@ -552,3 +552,8 @@ h2 {
     background: #ddd;
     border-radius:1rem;
 }
+.gold-title {
+  color: #d4af37;    
+  display: block;  
+  margin-bottom: 20px;
+}
