@@ -495,7 +495,11 @@ h2 {
     justify-content: center;
 }
 
-
+.special-ownline {
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0;
+}
 
 .sponsor-section {
     display: flex;
@@ -517,7 +521,6 @@ h2 {
 .sponsor-section a img {
     height:10rem;
 }
-
 
 .sponsor-section a.sponsor-wide img {
     height:8rem;
@@ -573,7 +576,6 @@ h2 {
     width: 100%;
     font-size: 3rem;
     font-weight: bold;
-    color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
       
