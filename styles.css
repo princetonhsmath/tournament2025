@@ -345,6 +345,23 @@ tr:hover:nth-child(2n) {
     background-color: rgba(205, 222, 255, 0.1);
 }
 
+@media screen and (max-width: 650px) {
+    table {
+        font-size:1rem;
+    }
+    td {
+        padding:0.5rem;
+    }
+
+    #page {
+        padding-inline:1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
 #menu-content .lesser a {
     color: gray;
     font-size: 1.25rem;
@@ -508,6 +525,8 @@ tr:hover:nth-child(2n) {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    max-width:100%;
 }
 
 .sponsor-section a img {
@@ -568,7 +587,13 @@ tr:hover:nth-child(2n) {
     .sponsor-section.plat a p {
         width: unset;
     }
+}
 
+@media screen and (max-width:500px) {
+    .sponsor-section a img, .sponsor-section a.sponsor-wide img {
+        height:unset;
+        width:100%;
+    }
 }
 
 i.small {

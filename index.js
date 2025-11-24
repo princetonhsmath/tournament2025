@@ -133,3 +133,5 @@ window.addEventListener("resize", () => {
     setTimeout(resizePfps,500);
 });
 resizePfps();
+
+setTimeout(resizePfps,1000);
