@@ -604,6 +604,11 @@ i.small {
     height:unset;
 }
 
+.sponsor-section a img.ugly-white {
+    background:#eee;
+    border-radius:0.75rem;
+}
+
 @media screen and (max-width:450px) {
     .sponsor-section a.sponsor-wide img {
         height: unset;
