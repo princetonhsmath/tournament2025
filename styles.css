@@ -534,7 +534,7 @@ tr:hover:nth-child(2n) {
 }
 
 .sponsor-section a.sponsor-wide img {
-    height: 8rem;
+    height: 6rem;
 }
 
 .sponsor-section.plat a img {
@@ -594,6 +594,17 @@ tr:hover:nth-child(2n) {
         height:unset;
         width:100%;
     }
+}
+
+@media screen and (max-width:1000px) {
+    .sponsor-section:not(.plat) a.sponsor-wider {
+        width:100%;
+    }
+    .sponsor-section a.sponsor-wider img {
+        height:unset;
+        width:100%;
+    }
+
 }
 
 i.small {
