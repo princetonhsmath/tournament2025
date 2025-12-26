@@ -27,7 +27,7 @@ function goToSection() {
     console.log(window.location.hash);
     const el = document.querySelector(window.location.hash);
     if (!el) return;
-    el.scrollIntoView({ block: "center" });
+    el.scrollIntoView({ block: "start" });
 }
 
 document.addEventListener("scroll", updateNav);
