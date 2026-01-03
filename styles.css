@@ -336,7 +336,7 @@ thead {
 tr:nth-child(2n) {
     background-color: rgba(155, 188, 255, 0.05);
 }
-tr > *:nth-child(4) {
+tr > *:nth-child(3) {
     border-right: 1px solid white;
 }
 tr:hover {
