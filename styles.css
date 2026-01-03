@@ -344,10 +344,11 @@ tr:hover {
 tr:hover:nth-child(2n) {
     background-color: rgba(205, 222, 255, 0.1);
 }
+<!--
 .note {
       background-color: #fafafa;
       font-weight: bold;
-}
+}-->
 
 @media screen and (max-width: 650px) {
     table {
