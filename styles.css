@@ -41,14 +41,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #4FC2FF; /* Royal Blue */
+  background-color: #305CDE; /* Royal Blue */
   color: #ffffff;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 10px 10px; /* LARGE top & bottom padding */
+  padding: 10px 40px; /* LARGE top & bottom padding */
   z-index: 9999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
