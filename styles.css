@@ -36,6 +36,52 @@ body {
 .hidden {
     opacity: 0;
 }
+/* Top Signup Banner */
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4169E1; /* Royal Blue */
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 60px; /* LARGE top & bottom padding */
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Banner Text */
+.top-banner span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Signup Button */
+.top-banner a {
+  background-color: #4169E1;
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 18px 36px; /* Big button */
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.top-banner a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Spacer so content isn't hidden behind banner */
+.banner-spacer {
+  height: 120px; /* adjust if banner height changes */
+}
 
 footer {
     padding: 1rem 2rem;
