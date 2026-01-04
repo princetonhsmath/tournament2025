@@ -38,18 +38,17 @@ body {
 }
 /* Top Signup Banner */
 .top-banner {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #4169E1; /* Royal Blue */
+  background-color: #4FC2FF; /* Royal Blue */
   color: #ffffff;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px 20px; /* LARGE top & bottom padding */
+  padding: 10px 10px; /* LARGE top & bottom padding */
   z-index: 9999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -66,7 +65,7 @@ body {
   color: #ffffff;
   text-decoration: none;
 
-  padding: 18px 36px; /* Big button */
+  padding: 18px 20px; /* Big button */
   font-size: 1.1rem;
   font-weight: 700;
 
@@ -80,7 +79,7 @@ body {
 
 /* Spacer so content isn't hidden behind banner */
 .banner-spacer {
-  height: 120px; /* adjust if banner height changes */
+  height: 30px; /* adjust if banner height changes */
 }
 
 footer {
