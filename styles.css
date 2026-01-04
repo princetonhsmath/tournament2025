@@ -45,7 +45,7 @@ body {
   color: #ffffff;
 
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
   align-items: center;
 
   padding: 10px 40px; /* LARGE top & bottom padding */
