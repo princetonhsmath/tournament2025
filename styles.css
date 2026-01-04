@@ -49,7 +49,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 40px 60px; /* LARGE top & bottom padding */
+  padding: 20px 20px; /* LARGE top & bottom padding */
   z-index: 9999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
