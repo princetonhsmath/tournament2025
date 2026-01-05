@@ -316,12 +316,6 @@ nav.big #links {
 }
 
 
-@media screen and (max-width: 450px) {
-    #top-links a:nth-child(4) {
-        display:none;
-    }
-}
-
 iframe {
     background: rgb(208, 219, 240);
     border-radius: 1rem;
