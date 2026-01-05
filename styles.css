@@ -38,48 +38,53 @@ body {
 }
 /* Top Signup Banner */
 .top-banner {
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #305CDE; /* Royal Blue */
-  color: #ffffff;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #305CDE;
+    /* Royal Blue */
+    color: #ffffff;
 
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
 
-  padding: 10px 40px; /* LARGE top & bottom padding */
-  z-index: 9999;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 1rem 2rem;
+    /* LARGE top & bottom padding */
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Banner Text */
 .top-banner span {
-  font-size: 1.4rem;
-  font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 /* Signup Button */
 .top-banner a {
-  background-color: #8b95f7;
-  color: #ffffff;
-  text-decoration: none;
+    background-color: #8b95f7;
+    color: #ffffff;
+    text-decoration: none;
 
-  padding: 18px 20px; /* Big button */
-  font-size: 1.1rem;
-  font-weight: 700;
+    padding: 18px 20px;
+    /* Big button */
+    font-size: 1.1rem;
+    font-weight: 700;
 
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
 }
 
 .top-banner a:hover {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 /* Spacer so content isn't hidden behind banner */
 .banner-spacer {
-  height: 30px; /* adjust if banner height changes */
+    height: 30px;
+    /* adjust if banner height changes */
 }
 
 footer {
@@ -246,12 +251,16 @@ nav.big #menu {
     overflow: hidden;
 }
 
+h4 {
+    font-size:1.5em;
+}
+
 h3 {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 h2:hover {
@@ -306,8 +315,15 @@ nav.big #links {
     }
 }
 
+
+@media screen and (max-width: 450px) {
+    #top-links a:nth-child(4) {
+        display:none;
+    }
+}
+
 iframe {
-    background: white;
+    background: rgb(208, 219, 240);
     border-radius: 1rem;
     padding-top: 1rem;
     width: calc(min(100%, 700px));
@@ -349,7 +365,7 @@ table {
     max-width: 80ch;
 }
 
-td {
+td, th {
     border-bottom: white 1px solid;
     padding: 0.75rem;
 }
@@ -358,20 +374,28 @@ tbody>tr:last-child>td {
     border-bottom: none;
 }
 
-thead td {
+thead td, thead {
     background: var(--bg-accent-1);
 }
 
-thead td:first-child {
-    border-radius: 1rem 0 0 0;
+thead td:first-child, thead th:first-child {
+    border-top-left-radius: 1rem;
 }
 
-thead td:last-child {
-    border-radius: 0 1rem 0 0;
+thead td:last-child, thead th:last-child {
+    border-top-right-radius: 1rem;
 }
 
-td:nth-child(1) {
+.schedule td:nth-child(1), .schedule th:nth-child(1) {
     width: 12ch;
+}
+
+.prizes-indiv th:nth-child(1), .prizes-team th:nth-child(1) {
+    width: 5ch;
+}
+
+.prizes-indiv tr td:nth-child(3){
+    border-right: 1px solid white;
 }
 
 thead {
@@ -381,9 +405,7 @@ thead {
 tr:nth-child(2n) {
     background-color: rgba(155, 188, 255, 0.05);
 }
-tr > *:nth-child(3) {
-    border-right: 1px solid white;
-}
+
 tr:hover {
     background-color: rgba(255, 255, 255, 0.05);
 }
@@ -391,11 +413,6 @@ tr:hover {
 tr:hover:nth-child(2n) {
     background-color: rgba(205, 222, 255, 0.1);
 }
-<!--
-.note {
-      background-color: #fafafa;
-      font-weight: bold;
-}-->
 
 @media screen and (max-width: 650px) {
     table {
