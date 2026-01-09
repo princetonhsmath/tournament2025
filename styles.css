@@ -476,31 +476,38 @@ tr:hover:nth-child(2n) {
 }
 
 .pfp-img[name="emma"] {
-    background-image: url("static/team/emma.png");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/emma.png");-->
 }
 
 .pfp-img[name="maiya"] {
-    background-image: url("static/team/maiya.webp");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/maiya.webp");-->
 }
 
 .pfp-img[name="william"] {
-    background-image: url("static/team/william.jpg");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/william.jpg");-->
 }
 
 .pfp-img[name="jonathan"] {
-    background-image: url("static/team/jonathan.jpg");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/jonathan.jpg");-->
 }
 
 .pfp-img[name="alex"] {
-    background-image: url("static/team/alex.jpeg");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/alex.jpeg");-->
 }
 
 .pfp-img[name="mateo"] {
-    background-image: url("static/team/mateo.jpeg");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/mateo.jpeg");-->
 }
 
 .pfp-img[name="jay"] {
-    background-image: url("static/team/jay.jpeg");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/jay.jpeg");-->
 }
 
 .pfp-img[name="yoav"] {
@@ -508,15 +515,18 @@ tr:hover:nth-child(2n) {
 }
 
 .pfp-img[name="oscar"] {
-    background-image: url("static/team/oscar.webp");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/oscar.webp");-->
 }
 
 .pfp-img[name="daniel"] {
-    background-image: url("static/team/daniel.webp");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/daniel.webp");-->
 }
 
 .pfp-img[name="om"] {
-    background-image: url("static/team/om.jpeg");
+    background-image: url("static/team/example.jpeg");
+    <!--background-image: url("static/team/om.jpeg");-->
 }
 
 .member-info {
