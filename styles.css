@@ -795,7 +795,7 @@ details summary {
 }
 
 details summary h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: normal;
     margin:0;
     transition: font-size 0s;
