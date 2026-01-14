@@ -172,6 +172,7 @@ a:hover {
 #icon>h1 {
     font-size: 2rem;
     margin: 0;
+    text-wrap:nowrap;
 }
 
 #links {
@@ -272,15 +273,18 @@ h2:hover {
     display: none;
 }
 
+span>span.short {
+    display: none;
+}
+
 @media screen and (max-width:1000px) {
-    #name {
+    span>span.long {
         display: none;
     }
-
-    #name-short {
-        display: block;
+    span>span.short {
+        display: inline;
     }
-
+    
     #links>a:nth-child(3) {
         display: none
     }
@@ -357,6 +361,7 @@ table {
     border: white 1px solid;
     width: 100%;
     max-width: 80ch;
+    background: rgba(145, 182, 255, 0.02);
 }
 
 td, th {
@@ -397,7 +402,7 @@ thead {
 }
 
 tr:nth-child(2n) {
-    background-color: rgba(155, 188, 255, 0.05);
+    background-color: rgba(145, 182, 255, 0.05);
 }
 
 tr:hover {
@@ -589,11 +594,18 @@ tr:hover:nth-child(2n) {
     justify-content: center;
     align-items: center;
 
+    position: relative;
+    top:0;
+
     max-width:100%;
 }
 
 .sponsor-section a img {
     height: 9rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-select: none;
+    pointer-events:none;
 }
 
 .sponsor-section a.sponsor-wide img {
@@ -706,11 +718,16 @@ i.small {
 }
 
 .sponsor-section a:hover img {
+    
     filter: drop-shadow(0px 0px 1rem #fff8);
 }
 
 .sponsor-section.plat a:hover img {
     filter: drop-shadow(0px 0px 2px #b5ccfd);
+}
+
+.sponsor-section a:active {
+    top:0.5rem;
 }
 
 @supports (font: -apple-system-body) {
@@ -749,4 +766,86 @@ i.small {
 #sponsors h3.silver {
     color: #cecece;
     display: block;
+}
+
+
+#faq-box {
+    backdrop-filter: blur(0.5rem);
+    -wekbit-backdrop-filter: blur(0.5rem);
+    border-radius: .5rem;
+}
+
+details {
+    border-bottom: solid white 1px;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+    background-color: rgba(145, 182, 255, 0.02);
+    max-width: 80ch;
+
+}
+
+details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-bottom 0s, background 0.2s;
+    background: var(--bg-accent-1);
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+details summary h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin:0;
+    transition: font-size 0s;
+}
+
+details[open] summary {
+    border-bottom: 1px solid white;
+    background: var(--bg-accent-1);
+}
+
+details summary:hover {
+    background: #ccc5;
+    cursor: pointer;
+}
+
+details summary {
+    padding: 0.75rem;
+}
+
+details[open]::details-content {
+    padding: 0.5rem 0.75rem;
+
+    transition: font-size 0s;
+}
+/* chevron */
+
+details summary i {
+    padding:0;
+    transform:rotateZ(0deg);
+    transition:transform 0.2s;
+}
+
+details[open] summary i {
+    transform:rotateZ(180deg);
+}
+
+/* Borders */
+details:first-of-type {
+    border-top: 1px solid white;
+    border-radius: 1rem 1rem 0 0;
+}
+
+details:first-of-type summary {
+    border-radius: 1rem 1rem 0 0;
+}
+
+details:last-of-type {
+    border-radius: 0 0 1rem 1rem;
+}
+
+details:last-of-type:not([open]) summary {
+    border-radius: 0 0 1rem 1rem;
 }
