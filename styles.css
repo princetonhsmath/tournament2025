@@ -2,6 +2,8 @@
     --bg-col: #000b1a;
     --bg-accent: #0b2031;
     --bg-accent-1: #193247;
+    --bg-accent-2: #2c506d;
+    --bg-accent-3: #2d5576;
 
     background: var(--bg-col);
     font-family: sans-serif;
@@ -769,12 +771,6 @@ i.small {
 }
 
 
-#faq-box {
-    backdrop-filter: blur(0.5rem);
-    -wekbit-backdrop-filter: blur(0.5rem);
-    border-radius: .5rem;
-}
-
 details {
     border-bottom: solid white 1px;
     border-left: solid white 1px;
@@ -803,11 +799,11 @@ details summary h4 {
 
 details[open] summary {
     border-bottom: 1px solid white;
-    background: var(--bg-accent-1);
+    background: var(--bg-accent-2);
 }
 
 details summary:hover {
-    background: #ccc5;
+    background: var(--bg-accent-3);
     cursor: pointer;
 }
 
@@ -815,11 +811,27 @@ details summary {
     padding: 0.75rem;
 }
 
-details[open]::details-content {
-    padding: 0.5rem 0.75rem;
-
-    transition: font-size 0s;
+details {
+    --anim-height: 50rem;
 }
+
+details>div {
+    padding: 0.5rem 0.75rem;
+}
+
+details::details-content {
+    content-visibility: visible;
+    max-height:0;
+    padding: 0;
+
+    overflow:hidden;
+    transition: font-size 0s, max-height 0.2s;
+}
+
+details[open]::details-content {
+    max-height:var(--anim-height);
+}
+
 /* chevron */
 
 details summary i {

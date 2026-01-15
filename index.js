@@ -135,3 +135,14 @@ window.addEventListener("resize", () => {
 resizePfps();
 
 setTimeout(resizePfps,1000);
+
+function updateDetailsAnimations() {
+    document.querySelectorAll("details").forEach(el => {
+        const innerHeight = `${el.querySelector("div")?.getBoundingClientRect().height}px` || "50rem";
+        el.style.setProperty("--anim-height",innerHeight);
+    })
+}
+
+updateDetailsAnimations();
+
+window.addEventListener("resize",updateDetailsAnimations());
