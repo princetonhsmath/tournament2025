@@ -150,7 +150,7 @@ window.addEventListener("resize",updateDetailsAnimations());
 /** @type {HTMLDivElement} */
 const scheduleContainer = document.querySelector(".schedule-container");
 
-scheduleContainer.querySelectorAll("button").forEach(el => el.addEventListener("click",e=>{
+scheduleContainer.querySelector("p a").addEventListener("click",e=>{
     scheduleContainer.classList.toggle("online");
     scheduleContainer.classList.toggle("in-person");
-}));
+});
