@@ -128,13 +128,13 @@ function resizePfps() {
     container.style.setProperty("--size", `${leftOver / cols}px`);
 }
 
-window.addEventListener("resize", () => {
-    resizePfps();
-    setTimeout(resizePfps,500);
-});
-resizePfps();
+// window.addEventListener("resize", () => {
+//     resizePfps();
+//     setTimeout(resizePfps,500);
+// });
+// resizePfps();
 
-setTimeout(resizePfps,1000);
+// setTimeout(resizePfps,1000);
 
 function updateDetailsAnimations() {
     document.querySelectorAll("details").forEach(el => {
@@ -146,3 +146,11 @@ function updateDetailsAnimations() {
 updateDetailsAnimations();
 
 window.addEventListener("resize",updateDetailsAnimations());
+
+/** @type {HTMLDivElement} */
+const scheduleContainer = document.querySelector(".schedule-container");
+
+scheduleContainer.querySelectorAll("button").forEach(el => el.addEventListener("click",e=>{
+    scheduleContainer.classList.toggle("online");
+    scheduleContainer.classList.toggle("in-person");
+}));

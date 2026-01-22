@@ -803,7 +803,7 @@ details[open] summary {
 }
 
 details summary:hover {
-    background: var(--bg-accent-3);
+    background: hsl(from var(--bg-accent-1) h s calc(l + 20));
     cursor: pointer;
 }
 
@@ -860,4 +860,36 @@ details:last-of-type {
 
 details:last-of-type:not([open]) summary {
     border-radius: 0 0 1rem 1rem;
+}
+
+.schedule-container.in-person>:not(.in-person),
+.schedule-container.online>:not(.online) {
+    display: none;
+}
+
+.schedule-container button {
+    background:var(--bg-accent-1);
+    border:none;
+    margin-block:1rem;
+    font-size:1rem;
+    font-family: "Lora";
+    padding:0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    font-style: italic;
+
+    &:hover {
+        cursor: pointer;
+        background:hsl(from var(--bg-accent-1) h s calc(l + 20));
+        border: 1px solid white;
+    }
+}
+
+.schedule-container>p {
+    margin-block:0;
+}
+
+.schedule-container>p, .schedule-container>button {
+    color:lightgray;
 }
