@@ -146,9 +146,11 @@ function updateDetailsAnimations() {
 
 updateDetailsAnimations();
 setTimeout(updateDetailsAnimations,100);
+setTimeout(updateDetailsAnimations,500);
 
 window.addEventListener("resize",updateDetailsAnimations());
 window.addEventListener("resize",setTimeout.bind(window,updateDetailsAnimations,100));
+window.addEventListener("resize",setTimeout.bind(window,updateDetailsAnimations,500));
 
 /** @type {HTMLDivElement} */
 const scheduleContainer = document.querySelector(".schedule-container");
