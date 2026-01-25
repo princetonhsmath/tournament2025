@@ -138,14 +138,17 @@ function resizePfps() {
 
 function updateDetailsAnimations() {
     document.querySelectorAll("details").forEach(el => {
-        const innerHeight = `${el.querySelector("div")?.getBoundingClientRect().height}px` || "50rem";
+        const innerHeight = `${el.querySelector("div")?.getBoundingClientRect().height ?? 10_000}px`;
+        console.log(el.querySelector("div")?.getBoundingClientRect(), innerHeight);
         el.style.setProperty("--anim-height",innerHeight);
     })
 }
 
 updateDetailsAnimations();
+setTimeout(updateDetailsAnimations,100);
 
 window.addEventListener("resize",updateDetailsAnimations());
+window.addEventListener("resize",setTimeout.bind(window,updateDetailsAnimations,100));
 
 /** @type {HTMLDivElement} */
 const scheduleContainer = document.querySelector(".schedule-container");
