@@ -887,3 +887,7 @@ details:last-of-type:not([open]) summary {
 a span {
     transition:none;
 }
+
+.top-banner i.small {
+    color: rgb(236, 236, 236);
+}
