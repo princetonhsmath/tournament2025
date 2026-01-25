@@ -297,6 +297,9 @@ span>span.short {
     #menu {
         display: none;
     }
+    nav.big #menu {
+        display: block;
+    }
 }
 
 nav #links {
