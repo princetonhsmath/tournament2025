@@ -56,6 +56,8 @@ body {
     /* LARGE top & bottom padding */
     z-index: 10;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    display: none;
 }
 
 /* Banner Text */
