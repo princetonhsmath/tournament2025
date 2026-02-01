@@ -893,3 +893,8 @@ a span {
 .top-banner i.small {
     color: rgb(236, 236, 236);
 }
+
+.section:has(#about-us) i.small {
+    color:lightgray;
+    font-size:0.75em;
+}
